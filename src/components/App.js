@@ -17,16 +17,15 @@ export const App = () => {
 
   return el; 
  };
- 
+
  const button= ()=> {
    const buttom= document.createElement('button')
    buttom.className = 'start'
    buttom.textContent= 'New Game'
-   buttom.addEventListener('click',function(){ 
-      let change = document.getElementsByClassName('content')
-     let mix= CardContainer()
-      change.appendChild(mix)
-    })
+   buttom.addEventListener('click',(e)=>{ 
+     e.preventDefault();
+     location.reload();
+    });
     return buttom
 }
 
