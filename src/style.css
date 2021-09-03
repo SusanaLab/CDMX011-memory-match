@@ -1,7 +1,5 @@
 .App{
-    position: absolute;
-    width: 490px;
-    height: 80px;
+   
     top: 0px;
     bottom: 30px;
     font-family: Sanchez;
@@ -11,52 +9,96 @@
     line-height: 82px;
     text-align: center;
     color: #1A253B;
+    background-image: url("wall.jpg");
+} 
+
+element.style {
+    width: 100vw;
 }
-:root{
-    background-color: rgb(255, 255, 255); 
-    
+user agent stylesheet
+html {
+    display: block;
 }
-.cardContent{
-     display:flex;
-    background-color: rgb(231, 221, 221);
-    width: 120px;
-    height: 250px ;
-    margin: 18px 6px;
-    padding: 11px 8px;
+
+
+element.style {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+div{
+    display:block
+}
+
+#root{
+    background-color: rgb(246, 253, 252); 
+}
+.content{
+    display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: rgb(110, 110, 110); 
+}
+.cardContent{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(231, 221, 221);
+    border-radius: 9spx;
+    height: 250px ;
+    margin: 20px;
+    padding: 11px 8px;
 }
 .text{
-    
     font-family: Sanchez;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 82px;
-    
     color: #1A253B;
-
+    margin: 0px;
 }
 .picture{
-  
-    background-color: rgb(71, 115, 165);
-    padding: 15;
+    padding: 10;
     width: 100px;
-    height: 140px;
+    height: 135px;
     margin: 20px;
-    justify-content: center;
-
 }
-.content{
+.start{
+    background-color: #052335;
+    font-size: 15px;
+    border-radius: 8px;
+    width: 10%;
+    border: 2px solid #052335; 
+    font-family: Sanchez;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0px;
+}
+.score {
+    margin: 0px;
+    top:0px;
+    bottom: 0px;
+    padding: 0px;
+    font-size: 30px;
+    text-align: left;
+}
+
+/* @media screen and (min-width: 700px) and (max-width: 1024px){
+    .content{
+        width: 55%;
+        justify-content: center;
+        padding: 30px;
+        margin: 50px 250px;
+        top: 0px;
+        bottom: 20px;
     
-    display:flex;
-    background-color: rgb(110, 110, 110);
-    padding: 35;
-    top: 150px;
-    bottom: 30px;
-    width: 1350px;
-    height:1100 ;
-    flex-wrap: wrap;
-    justify-content: center;
+    
+    }
+    
+ }  */
 
-}
