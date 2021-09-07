@@ -18,40 +18,56 @@ export const App = () => {
   return el; 
  };
  
- const button= ()=> {
-   const buttom= document.createElement('button')
-   buttom.className = 'start'
-   buttom.textContent= 'New Game'
-   buttom.addEventListener('click',function(){ 
-      let change = document.getElementsByClassName('content')
-     let mix= CardContainer()
-      change.appendChild(mix)
-    })
-    return buttom
+ 
+ export const button= ()=> {
+  const buttom= document.createElement('button')
+  buttom.className = 'start'
+  buttom.textContent= 'New Game'
+  buttom.addEventListener('click',(e)=>{ 
+    e.preventDefault();
+    location.reload();
+   });
+   return buttom
 }
 
 
-  const Card = (card) => {
-      const cardEl = document.createElement('div')
-      cardEl.className = 'cardContent'
-      const titleEl = document.createElement('p')
-      titleEl.textContent = card.id
-      titleEl.className = 'text'
-      const img = document.createElement('img');
-      img.className = 'picture'
-      img.src = card.image
-      cardEl.appendChild(img)
-      cardEl.appendChild(titleEl)
 
-      return cardEl
- }
+const Card = (card) => {
+  //contenedor padre
+  const cardEl = document.createElement('div')
+  cardEl.className = 'cardContent'
+  const midle = document.createElement('div')
+  midle.className = 'thecard'
+  //contenedor hijo enfrente
+  const front = document.createElement('div')
+  front.className = 'front'
+  const img = document.createElement('img');
+  img.className = 'picture'
+  img.src = card.image
+  //contenedor hijo atras
+  const back = document.createElement('div')
+  back.className = 'back'
+  const picture = document.createElement('img');
+  picture.className = 'pictureBack'
+  picture.src = 'https://i.pinimg.com/564x/19/89/ad/1989ad9a6471fb4287372dfda3979f1f.jpg'
 
- const CardContainer = () => {
+  front.appendChild(img) 
+  back.appendChild(picture) 
+  midle.appendChild(back)
+  midle.appendChild(front)
+  cardEl.appendChild(midle)
+
+  return cardEl
+}
+
+
+ export const CardContainer = () => {
   const container = document.createElement('div')
   container.className = 'content'
   shuffle(cards).forEach(function(card) {
     container.appendChild(Card(card))
-   
+    //giro de carta
+    
   })
   
   return container
@@ -73,47 +89,24 @@ export function shuffle (cards) {
   return cards
 }
 
-
-
-
-/*function changeContent (Content){
-  const cleanContent= document.getElementsByClassName("img");
-  cleanContent.remove()
-  return Content
-}*/
-
-
-/*const CardContainerShuffle = () => {
-  const box= document.createElement('div')
-  box.className = 'content'
-  shuffle(cards).forEach(function(card) {
-    box.appendChild(Card(card))
-   
-  });
-
-  return box
-}*/
-
-
-/**const boton = document.getElementsByClassName("start");
-boton.addEventListener("click",(event) => {
-  const but = CardContainer(cards,event.target)
-  document.getElementsByClassName.innerHTML = but
-
-})*/
-
-
-/*const mix = document.getElementsByClassName("start");
-mix.addEventListener('click', (event) => {
-    const change = shuffle(cards,event.target)
+//2 cartas a la vez
+let cardsSelect=  [];
+export function change (cards){
+  for (let i = 0; i < cards.length; i++){
+    if (cards.id === cards.id) {
+     var get =this.getAttribute('cardContend') 
+     cardsSelect.push(travel[get].id)
   
-    
-    document.getElementsByClassName("content").innerHTML= CardContainer
-});
-*/
-
-
-
-
-
+    }
+  } 
+}
+   console.log(cardsSelect)
+/*let carta= Card(card);
+    container.appendChild(carta);
+    carta.addEventListener("click", (e) => {
+        
+        let elementos = carta.childNodes;
+        elementos[1].style.transition='all 0.5s';
+        elementos[1].style.opacity = 0;
+      } */
 
