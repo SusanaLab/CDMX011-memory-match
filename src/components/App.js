@@ -36,8 +36,25 @@ const Card = (card) => {
   //contenedor padre
   const cardEl = document.createElement('div')
   cardEl.className = 'cardContent'
+  //pasar la funcion cuando se ejecute el clic
+  //midle.onclick = flip()
   const midle = document.createElement('div')
   midle.className = 'thecard'
+  midle.addEventListener('click',()=>{ 
+    var element = event.currentTarget;
+	if (element.className === "thecard") {
+    if(element.style.transform == "rotateY(180deg)") {
+      element.style.transform = "rotateY(0deg)";
+      //alert("Try again")
+    }
+    else  {
+      element.style.transform = "rotateY(180deg)";
+      
+      //alert("It's a match")
+    }
+  }
+   });
+   
   //contenedor hijo enfrente
   const front = document.createElement('div')
   front.className = 'front'
@@ -50,7 +67,6 @@ const Card = (card) => {
   const picture = document.createElement('img');
   picture.className = 'pictureBack'
   picture.src = 'https://i.pinimg.com/564x/19/89/ad/1989ad9a6471fb4287372dfda3979f1f.jpg'
-
   front.appendChild(img) 
   back.appendChild(picture) 
   midle.appendChild(back)
@@ -88,25 +104,14 @@ export function shuffle (cards) {
 	}
   return cards
 }
+/*
+let cardSelected = [];
+let cardId = [];
 
-//2 cartas a la vez
-let cardsSelect=  [];
-export function change (cards){
-  for (let i = 0; i < cards.length; i++){
-    if (cards.id === cards.id) {
-     var get =this.getAttribute('cardContend') 
-     cardsSelect.push(travel[get].id)
-  
-    }
-  } 
-}
-   console.log(cardsSelect)
-/*let carta= Card(card);
-    container.appendChild(carta);
-    carta.addEventListener("click", (e) => {
-        
-        let elementos = carta.childNodes;
-        elementos[1].style.transition='all 0.5s';
-        elementos[1].style.opacity = 0;
-      } */
+function Match (){
+var cards = document.querySelector('thecard')
+cardSelected.push(travel[cards].id)
+cardId.push(cards)
 
+
+}*/

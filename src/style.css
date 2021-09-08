@@ -1,57 +1,64 @@
 .App{
    
-    top: 0px;
-    bottom: 30px;
-    font-family: Sanchez;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 82px;
-    text-align: center;
-    color: #1A253B;
-    background-image: url("wall.jpg");
+  top: 0px;
+  bottom: 30px;
+  font-family: Sanchez;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 82px;
+  text-align: center;
+  color: #1A253B;
+  background-image: url("https://images.unsplash.com/photo-1504253163759-c23fccaebb55?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 } 
 
 element.style {
-    width: 100vw;
+  width: 100vw;
 }
 user agent stylesheet
 html {
-    display: block;
+  display: block;
 }
 
 
 element.style {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 body {
-    display: block;
-    margin: 8px;
-    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80");
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+  display: block;
+  margin: 0px;
+  height: 100%;
+  
+  object-fit: cover;
+  object-position: center center;
 }
 div{
-    display:block
+  display:block
 }
+
 
 #root{
-   background-image: url("https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+ 
+  background-repeat: no-repeat;
+  background-position: center ;
+ height: 100%;
+ width: 100%;
 }
 .content{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: rgb(199, 223, 250); 
-    
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(199, 223, 250); 
+  
 }
 
+/*flipcard*/
 
 .cardContend{
 position: relative;
@@ -78,18 +85,16 @@ transition: all 0.5s ease;
 background: rgb(27, 124, 124);
 border-radius: 10px;
 }
-.thecard:hover{
-    transform: rotateY(180deg);
-}
+
 
 .back{
-    position: absolute;
-    width: 120px;
-    height: 200px;
-    backface-visibility: hidden;
-    background: rgb(209, 8, 159);
-    color: bisque;
-    
+  position: absolute;
+  width: 120px;
+  height: 200px;
+  backface-visibility: hidden;
+  background: rgb(209, 8, 159);
+  color: bisque;
+  
 }
 .front{
 position: absolute;
@@ -101,50 +106,50 @@ color: bisque;
 transform: rotateY(180deg);
 }
 .pictureBack{
-    width: 120px;
-    height: 200px;
-    border-radius: 10px;
+  width: 120px;
+  height: 200px;
+  border-radius: 10px;
 }
 
 .picture{
-    width: 120px;
-    height: 200px;
-    border-radius: 10px;
+  width: 120px;
+  height: 200px;
+  border-radius: 10px;
 }
 
-
+/*flip*/
 
 .start{
-   
-    background-color: #052335;
-    font-size: 15px;
-    border-radius: 8px;
-    width: 10%;
-    border: 2px solid #052335; 
-    font-family: Sanchez;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 0px;
+ 
+  background-color: #052335;
+  font-size: 15px;
+  border-radius: 8px;
+  width: 10%;
+  border: 2px solid #052335; 
+  font-family: Sanchez;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0px;
 }
 .score {
-    margin: 0px;
-    top:0px;
-    bottom: 0px;
-    padding: 0px;
-    font-size: 30px;
-    text-align: left;
+  margin: 0px;
+  top:0px;
+  bottom: 0px;
+  padding: 0px;
+  font-size: 30px;
+  text-align: left;
 }
 
 /* @media screen and (min-width: 700px) and (max-width: 1024px){
-    .content{
-        width: 55%;
-        justify-content: center;
-        padding: 30px;
-        margin: 50px 250px;
-        top: 0px;
-        bottom: 20px;
-    
-    
-    }
-    
- }  */
+  .content{
+      width: 55%;
+      justify-content: center;
+      padding: 30px;
+      margin: 50px 250px;
+      top: 0px;
+      bottom: 20px;
+  
+  
+  }
+  
+}  */
