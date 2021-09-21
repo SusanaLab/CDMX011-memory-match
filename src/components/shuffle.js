@@ -9,7 +9,7 @@ export function shuffle (cards) {
 		cards[i] = cards[randomNumber];
     //console.log(cards[i])
 		cards[randomNumber] = selected;
-   //console.log(cards[randomNumber])
+    //console.log(cards[randomNumber])
 	}
   return cards
 }
