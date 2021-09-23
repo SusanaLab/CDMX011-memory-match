@@ -1,33 +1,33 @@
-import { Match } from '../components/Match.js';
-//import {flip } from '../components/Flip.js';
+  import { Match } from '../components/Match.js';
+  //import {flip } from '../components/Flip.js';
 
-export const Card = (card) => {
+  export const Card = (card) => {
   //contenedor padre
   const cardEl = document.createElement('div')
   cardEl.className = 'cardContent'
- //cardEl.dataset.id = card.id;
+  //cardEl.dataset.id = card.id;
   //pasar la funcion cuando se ejecute el clic
   const midle = document.createElement('div')
   midle.className = 'thecard' 
   midle.id = card.id;
   midle.addEventListener('click',()=>{
-    Match(card.id)
+  Match(card.id)
   } );
   /*midle.addEventListener('click', (event)=>{ 
-    //
-    var element = event.currentTarget;
-	if (element.className === "thecard") {
-    if(element.style.transform == "rotateY(180deg)") {
-      element.style.transform = "rotateY(0deg)";
-    }
-    else  {
-      element.style.transform = "rotateY(180deg)";
-    //alert("It's a match")
-
-    }
+  //
+  var element = event.currentTarget;
+  if (element.className === "thecard") {
+  if(element.style.transform == "rotateY(180deg)") {
+  element.style.transform = "rotateY(0deg)";
   }
-   });*/
-   //
+  else  {
+  element.style.transform = "rotateY(180deg)";
+  //alert("It's a match")
+
+  }
+  }
+  });*/
+  //
   //contenedor hijo enfrente
   const front = document.createElement('div')
   front.className = 'front'
@@ -46,13 +46,13 @@ export const Card = (card) => {
   midle.appendChild(front)
   cardEl.appendChild(midle)
   return cardEl
-}
+  }
 
-export const CardContainer = (data) => {
+  export const CardContainer = (data) => {
   const container = document.createElement('div')
   container.className = 'content'
   data.forEach(function(card) {
-    container.appendChild(Card(card))
+  container.appendChild(Card(card))
   })
   return container
-}
+  }

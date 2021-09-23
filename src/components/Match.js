@@ -6,7 +6,7 @@ let save= [];
 let delay = 1000;
 let contador = 0;
  //let pElement = document.getElementsByClassName("score");           
-let count = document.getElementsByClassName('score').innerHTML = "SCORE: " + contador;
+//let count = document.getElementsByClassName('score').innerHTML = "SCORE: " + contador;
 
 
 export function Match (id){
