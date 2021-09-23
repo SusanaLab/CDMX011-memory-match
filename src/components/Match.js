@@ -10,9 +10,34 @@ let contador = 0;
 
 
 export function Match (id){
-    console.log(id)
+   // console.log(id)
+   
+     
+    if (save.includes(id)){
+          
+       dishable(id) 
+       save= []
+       console.log(save)  
+     }
+    
+     if(!save.includes(id)){
+      save.push(id) 
+    
+      console.log(save)  
+      //flip(id) 
+     }
+     if(save.length === 2){ 
+      flip(save[0])
+      flip(save[1])
+      save= []
+      console.log(save)  
+    }
+}
 
-    if(save.length === 2){ // bloquear clicks si ya 2 tarjetas fueron volteadas
+
+     /*if(save.length === 2){ // bloquear clicks si ya 2 tarjetas fueron volteadas
+        
+      
         let id1 = save[0];
         let id2 = save[1];
         //console.log(id1)
@@ -60,9 +85,9 @@ export function Match (id){
                 save = []
             }
             alert("Try again")
-    }
+    }*/
 
-} 
+
 
 
 

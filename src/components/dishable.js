@@ -1,5 +1,5 @@
 export function dishable(id){
-    document.querySelector(`[id="${id}"]`).style.pointerEvents = 'none';
+    document.querySelectorAll(`[data-id="${id}"]`).style.pointerEvents = 'none';
         
   }
   

@@ -9,24 +9,20 @@
   //pasar la funcion cuando se ejecute el clic
   const midle = document.createElement('div')
   midle.className = 'thecard' 
-  midle.id = card.id;
-  midle.addEventListener('click',()=>{
+  midle.dataset.id = card.id;
+  /*midle.addEventListener('click',()=>{
+  
+  } );*/
+  midle.addEventListener('click', (event)=>{ 
   Match(card.id)
-  } );
-  /*midle.addEventListener('click', (event)=>{ 
-  //
   var element = event.currentTarget;
   if (element.className === "thecard") {
-  if(element.style.transform == "rotateY(180deg)") {
-  element.style.transform = "rotateY(0deg)";
-  }
-  else  {
+ 
   element.style.transform = "rotateY(180deg)";
-  //alert("It's a match")
 
   }
-  }
-  });*/
+  
+  });
   //
   //contenedor hijo enfrente
   const front = document.createElement('div')
