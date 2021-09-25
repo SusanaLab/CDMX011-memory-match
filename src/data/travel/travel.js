@@ -10,5 +10,6 @@ export default {
     { id: 'Spain', image: 'https://i.pinimg.com/564x/a7/1b/7b/a71b7b0c3047c2e2c5ef44f64942b9a9.jpg', bgColor: '#1572B6' },
     { id: 'China', image: 'https://i.pinimg.com/564x/2a/42/f1/2a42f1028dd30fdd1317d91441916cd5.jpg', bgColor: '#1572B6' },
     { id: 'Indonesia', image: 'https://i.pinimg.com/564x/17/41/65/17416552b3214b7c54fa036b6a337a62.jpg', bgColor: '#1572B6' },
+  
   ],
 };

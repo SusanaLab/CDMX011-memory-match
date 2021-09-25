@@ -7,14 +7,16 @@ const cards = travel.items.concat(travel.items)
 
 
 export const App = () => {
-  const el = document.createElement('div');
-  el.className = 'App';
-  el.textContent = 'Travel Memory';
+  const el = document.createElement('body');
+  const header = document.createElement('header')
+  header.className = 'App';
+  header.textContent = 'Travel Memory';
   const score = document.createElement("h6")
   score.className = 'score'
-  el.appendChild(score)
+  header.appendChild(score)
   const mix = shuffle(cards)
-  el.appendChild(button())
+  header.appendChild(button())
+  el.appendChild(header)
   el.appendChild(CardContainer(mix))
  
   return el; 

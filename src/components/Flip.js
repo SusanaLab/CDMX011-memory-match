@@ -1,10 +1,10 @@
-export function flip(dataId){
-  const element = document.querySelector(`[data-id="${dataId}"]` );
+export function flip(index){
+  const element = document.querySelector(`[data-idx="${index}"]` ); //manera dinamica de acceder a un atributo
   if (element.className === "thecard") {
   
-      element.style.transform = "rotateY(180deg)";
+      element.style.transform = "rotateY(0)";
   
   }
-  console.log("hola flip")
+  //console.log("hola flip")
 }
 
