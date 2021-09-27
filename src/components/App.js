@@ -11,9 +11,10 @@ export const App = () => {
   const header = document.createElement('header')
   header.className = 'App';
   header.textContent = 'Travel Memory';
-  const score = document.createElement("h6")
-  score.className = 'score'
+  let score = document.createElement("h6")
+  score.className = 'score' 
   header.appendChild(score)
+ 
   const mix = shuffle(cards)
   header.appendChild(button())
   el.appendChild(header)

@@ -1,11 +1,10 @@
   import { Match } from '../components/Match.js';
-  //import {flip } from '../components/Flip.js';
+ 
 
   export const Card = (card, index) => {
   //contenedor padre
   const cardEl = document.createElement('div')
   cardEl.className = 'cardContent'
-  //cardEl.dataset.id = card.id;
   //pasar la funcion cuando se ejecute el clic
   const midle = document.createElement('div')
   midle.className = 'thecard' 
