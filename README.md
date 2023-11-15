@@ -1,13 +1,25 @@
-TRAVEL MEMMORY
-El proyecto resuelve una necesidad de entretenimiento mediante una versión web del juego Memory Match, en la que una jugadora pueda jugar sola, en el navegador.
-El diseño se creó enfocado en el siguiente perfil:
-Perfil de Usuaria
-El desarrollo del proyecto “Memmory match”, se enfoca en satisfacer la necesidad de entretenimiento para aquellas personas que disfrutan de viajar y a su vez tener ese recuerdo de la experiencia que tuvieron al visitar algún lugar, justo fue la razón para nombrarlo “Travel memmory”.
-Son personas que pasan bastante tiempo viajando y muchas veces tienen tiempo libre en el cual buscan tener un momento de relajación, los usuarios principalmente hacen uso de tabletas electrónicas y computadoras que son los principales dispositivos a los que se dirige la App.
+# Travel Memory
+
+## Resumen del Proyecto
+
+**Travel Memory** es una versión web del juego Memory Match diseñada para satisfacer la necesidad de entretenimiento de personas a las que les encanta viajar. La aplicación permite a los usuarios jugar solos desde su navegador, combinando la diversión del juego con la posibilidad de revivir recuerdos de sus experiencias de viaje.
+
+## Perfil del Usuario
+
+### Jugador Viajero
+
+El desarrollo de "Travel Memory" está centrado en personas que disfrutan viajando y desean conservar recuerdos de sus experiencias en diferentes lugares. Estos usuarios buscan entretenimiento durante sus viajes y momentos de relajación. La aplicación está optimizada para tabletas electrónicas y computadoras, los dispositivos principales utilizados por estos jugadores viajeros.
+
+## Tecnologías Utilizadas
+
+- HTML
+- CSS
+- JavaScript
 
 
+## Instrucciones para Ejecutar el Proyecto
 
-Prototipo de alta fidelidad 
-![image (13)](https://user-images.githubusercontent.com/86276089/134969768-03f408a8-af8c-4a2f-92e8-01d8dd08af2b.png)
-Final
-![image (14)](https://user-images.githubusercontent.com/86276089/134969780-0292f629-70ea-43ac-b88f-e245bb8d7e44.png)
+1. Clona este repositorio.
+2. Abre el archivo `index.html` en tu navegador.
+
+¡Revive tus recuerdos de viaje mientras disfrutas de una emocionante partida de Travel Memory! 🌍🧠
