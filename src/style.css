@@ -1,5 +1,5 @@
-.App{
-   
+.App {
+
   top: 0px;
   bottom: 30px;
   font-family: Sanchez;
@@ -14,13 +14,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-} 
+}
 
 element.style {
   width: 100vw;
 }
-user agent stylesheet
-html {
+
+user agent stylesheet html {
   display: block;
 }
 
@@ -34,126 +34,108 @@ body {
   display: block;
   margin: 0px;
   height: 100%;
-  
   object-fit: cover;
   object-position: center center;
 }
-div{
-  display:block
+
+div {
+  display: block
 }
 
 
-#root{
- 
+#root {
   background-repeat: no-repeat;
-  background-position: center ;
- height: 100%;
- width: 100%;
+  background-position: center;
+  height: 100%;
+  width: 100%;
 }
-.content{
-  display:flex;
+
+.content {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgb(199, 223, 250); 
-  
+  background-color: rgb(199, 223, 250);
 }
 
-/*flipcard*/
-
-.cardContend{
-position: relative;
-width: 150px;
-height: 120px;
-background: rgb(236, 14, 14);
-display:flex;
-flex-direction: column;
-justify-content: center;
-background-color: rgb(231, 221, 221);
-border-radius: 9spx;
-height: 250px ;
-margin: 20px;
-padding: 11px 8px;
+.cardContend {
+  position: relative;
+  width: 150px;
+  height: 120px;
+  background: rgb(236, 14, 14);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(231, 221, 221);
+  border-radius: 9spx;
+  height: 250px;
+  margin: 10px;
+  padding: 11px 8px;
 }
 
-.thecard{
-margin:10px ; 
-position: relative;
-width: 120px;
-height: 200px;
-transform-style: preserve-3d;
-transition: all 0.5s ease;
-background: rgb(255, 255, 255);
-border-radius: 10px;
-}
-
-
-.back{
-  position: absolute;
-  width: 120px;
-  height: 200px;
-  backface-visibility: hidden;
+.thecard {
+  margin: 5px;
+  position: relative;
+  width: 100px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
   background: rgb(255, 255, 255);
-  color: bisque;
-  
-}
-.front{
-position: absolute;
-width: 120px;
-height: 200px;
-backface-visibility: hidden;
-background: rgb(170, 199, 39);
-color: bisque;
-transform: rotateY(180deg);
-}
-.pictureBack{
-  width: 120px;
-  height: 200px;
   border-radius: 10px;
 }
 
-.picture{
-  width: 120px;
-  height: 200px;
+
+.back {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  backface-visibility: hidden;
+  background: rgb(255, 255, 255);
+  color: bisque;
+  border-radius: 10px;
+}
+
+.front {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  color: bisque;
+  transform: rotateY(180deg);
+}
+
+.pictureBack {
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.picture {
+  width: 100px;
+  height: 150px;
   border-radius: 10px;
 }
 
 /*flip*/
 
-.start{
- 
+.start {
+
   background-color: #052335;
   font-size: 15px;
   border-radius: 8px;
   width: 10%;
-  border: 2px solid #052335; 
+  border: 2px solid #052335;
   font-family: Sanchez;
   font-size: 20px;
   color: #ffffff;
   margin: 0px;
 }
+
 .score {
   margin: 0px;
-  top:0px;
+  top: 0px;
   bottom: 0px;
   padding: 0px;
   font-size: 30px;
   text-align: left;
 }
-
-
-
-
-
-/* @media screen and (min-width: 700px) and (max-width: 1024px){
-  .content{
-      width: 55%;
-      justify-content: center;
-      padding: 30px;
-      margin: 50px 250px;
-      top: 0px;
-      bottom: 20px;
-  
-  
-  }
-  
-}  */

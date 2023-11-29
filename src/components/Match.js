@@ -1,42 +1,33 @@
-import {flip} from '../components/Flip.js';
+import { flip } from '../components/Flip.js';
 import { dishable } from './dishable.js';
 
+let flippedCards = [];
+let matchedCards = [];
+let pairsFound = 0;
 
-let save= []; 
-let done =[]; 
-let cardIndex = [];
-let contador = 1;
+export function Match(id, idx) {
+  if (flippedCards.length < 2) {
+    flip(idx);
+    flippedCards.push({ id, idx });
+  }
 
-export function Match (id, idx){
- 
-  if (save.includes(id)){
-      done.push(id); 
-      save= [];
-      cardIndex= []; 
-      //console.log(save);    
-      dishable(id);     
-   }
-  if (done.includes(id) ){
-     alert("It`s a Match. Pairs found " + contador )
-     contador++;
-  } 
-  if(!save.includes(id) && !done.includes(id)){
-   save.push(id); 
-   cardIndex.push(idx);
-   //console.log(save);  
-   }   
-  if(save.length === 2){  
-    setTimeout(() => {
-        flip(cardIndex[1]);
-        flip(cardIndex[0]);
-        save= [];
-        cardIndex= [];
-        //console.log(save); 
-    }, 1000);
-  if (contador.length === 9){  
-      alert("congratulations, you've finished the game.")
-     //console.log(done)
-  } 
- }   
+  if (flippedCards.length === 2) {
+    if (flippedCards[0].id === flippedCards[1].id) {
+      pairsFound++;
+   
+      matchedCards.push(flippedCards[0].id, flippedCards[1].id);
+      flippedCards = [];  
+      
+    } else {
+      setTimeout(() => {
+        flip(flippedCards[0].idx);
+        flip(flippedCards[1].idx);
+        flippedCards = [];
+      }, 1000);
+    }
+  }
+
+  if (pairsFound === 9) {
+    alert("Congratulations, you've finished the game!");
+  }
 }
-
