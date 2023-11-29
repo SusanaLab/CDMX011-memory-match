@@ -4,8 +4,6 @@ import {shuffle} from '../components/shuffle.js';
 import {CardContainer} from '../components/contenedor.js';
 
 const cards = travel.items.concat(travel.items)
-
-
 export const App = () => {
   const el = document.createElement('body');
   const header = document.createElement('header')
